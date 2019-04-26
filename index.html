@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        <title>Home page for Real-Estate.</title>
+        <link href="Style_homepage.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         </head>
+    <body>
+              
+            <div class="main" id='nav'>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>   
+                    <li><a href="listing.html">Listings</a></li>
+                    <li><a href="client.html">Clients</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                                  
+                </ul>
+            </div>
+            <div class ="registration">
+                <ul>
+                   <li><a href="login_signup.html">Login</a></li> 
+                </ul>
+            </div>
+           
+            <div>
+                <img src="Images/s2.jpg" alt="" class="image"/>
+               
+            </div>
+        <div class='box'>
+            
+            <table style="width: 100%">
+                
+                <tr style="text-align: center">
+                    <td style="width: 33%">
+                        <img src="Images/Buy-150x150.png" alt=""/>
+                    </td>
+                       
+                    <td style="width: 33%">
+                        <img src="Images/Sell-150x150.png" alt=""/>
+                    </td>
+                
+                    <td style="width: 33%">
+                        <img src="Images/Contact-150x150.png" alt=""/>
+                    </td>
+                <tr style="text-align: center">
+                         
+                    <td style="width: 33%">
+                        <a href="#"><b>Search Thousands of Home</b></a>
+                    </td>
+                       
+                    <td style="width: 33%">
+                        <a href="#"><b>What's Your Home Worth </b></a>
+                    </td>
+                
+                    <td style="width: 33%">
+                        <a href="#"><b>Contact Me</b></a>
+                    </td>
+                </tr>
+                
+                <tr style="text-align: center">
+                         
+                    <td style="width: 33%">
+                        Search all available real estate and homes for sale in Schaumburg,
+                        Hanover Park, Bartlett, Hoffman Estates, Streamwood and surrounding 
+                        areas instantly!
+                    </td>
+                       
+                    <td style="width: 33%">
+                        With the ever changing market, see how your home compares with 
+                        others in your neighborhood.
+                    </td>
+                
+                    <td style="width: 33%">
+                        Let me know how I can help you meet your needs, whether you’re
+                        just looking or preparing for your search.
+                    </td>
+                </tr>
+                
+                <tr >
+                    <td colspan="2" style="width: 50%">  
+                    <p>
+                        Welcome to your one-stop source for real estate services covering the Schaumburg,
+                        Hoffman Estates, Hanover Park, Streamwood,Elk Grove Village Palatine, Bartlett, 
+                        Roselle and all other Chicago and Chicago Suburban areas. Real estate is one of 
+                        the most exciting investments one can make, 
+                        and it should be a fun and rewarding experience.Here you’ll find everything you’ll need to buy or 
+                        sell a home, as well as learn about the market value of homes you may own in the area.</p> 
+                    </br>
+                 
+                    <p>
+                        It is my goal to provide you with superior personal service at all times, so please 
+                        tell me more about you!Learn About Me.
+                    </p>
+                    </br>
+                    <p>
+                        Contact me so I can keep you updated on the latest real estate activities in
+                        our community and answer any questions you may have.
+                    </p> 
+                    </br>
+                    <p>
+                        Thanks and I look forward to assisting you in all of your real estate needs!
+                    </p>
+                    </td>
+                      
+                </tr>
+            </table>
+        </div>
+          
+                
+    </body>
+</html>
+<!-- add java script -->
+<script type="text/javascript">
+    var main = document.getElementById('nav');
+    window.onscroll = function()
+    {
+        if(window.pageYOffset>100)
+        {
+            nav.style.position = "fixed";
+            nav.style.top = 0;
+        }
+        else
+        {
+            box.style.position = "absolute";
+            box.top.style = 100;
+            
+        }
+    }
