@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login and registration page design</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class = "form">
+			<form class = "Registration-form">
+			  <input type = "text"  name = "username" placeholder = "Username*"/>
+			  <input type = "text" name = "email" placeholder = "Email*"/>
+			  <input type = "text" name = "Phone" placeholder = "Phone no."/>
+			  <input type = "password" name = "password1" placeholder = "Password"/>
+			  <input type = "password" name = "password2" placeholder = "Re-type Password"/>
+			  <button>Create</button>
+			  <p class = "message"> Already Registered? <a href="#">Login</a> 
+			  </p>
+			</form>
+			<form class="login-form">
+				<input type = "text" name = "username" placeholder = "Username*"/>
+				<input type = "password" name = "password1" placeholder = "password"/>
+				<button> Login </button>
+				<p class = "message">Not Registered? <a href = "#">Register</a>
+				</p>
+			</form>
+			
+			<script src = 'https://code.jquery.com/jquery-3.4.0.min.js'>
+			</script>
+			
+			<script>
+				$('.message a').click(function(){
+				$('form').animate({height: "toggle", opacity:"toggle"},"slow");
+				});
+			</script>
+		</div>	
+	    </body>
+</html>
